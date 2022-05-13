@@ -191,7 +191,6 @@ int main(){
     vector<int> s = {2, 2};
     auto start = clock();
     Tensor mpRes = maxPooling(src1, ks, pad, s);
-    cout<<"ppp"<<endl;
     Tensor addRes = tensorAdd(mpRes, src2);
     auto end = clock();
     cout<<"Result Shape: "<<addRes.size()<<" "<<addRes[0].size()<<" "<<addRes[0][0].size()<<" "<<addRes[0][0][0].size()<<endl;
